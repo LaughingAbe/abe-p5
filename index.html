@@ -5,7 +5,6 @@
 		<title>Abe's Music Editor</title>
 		<script src="libraries/p5.min.js" type="text/javascript"></script>
 		<script src="libraries/p5.sound.min.js" type="text/javascript"></script>
-
 		<script src="sketch.js" type="text/javascript"></script>
 
 		<style>
@@ -16,7 +15,30 @@
 			canvas {
 				vertical-align: top;
 			}
+			.editorButton {
+				background-color: #4CAF50;
+				color: white;
+				padding: 10px 20px;
+				font-size: 16px;
+				border: none;
+				cursor: pointer;
+			}
+
+			.editorButton:hover {
+				background-color: #45a049;
+			}
+
+			#buttonContainer {
+				margin-top: 20px;
+				text-align: center;
+			}
 		</style>
 	</head>
-	<body></body>
+	<body>
+		<div id="sketch-container"></div>
+		<div id="buttonContainer">
+			<button class="editorButton" onclick="displayNotes()">Display</button>
+			<button class="editorButton" onclick="playNotes()">Play</button>
+		  </div>
+	</body>
 </html>
