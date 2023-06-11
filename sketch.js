@@ -57,6 +57,11 @@ let sounds = [
 		note: "Re1",
 		audio: "D1",
 	},
+	{
+		color: "yellow",
+		note: "Mi1",
+		audio: "E1",
+	},
 ];
 //This runs before setup
 function preload() {
